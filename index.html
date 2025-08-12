@@ -11,6 +11,9 @@
         function play() {
             var audio = document.getElementById("audio");
             audio.play();
+            if (!document.body.classList.contains('bgdance')) {
+              document.body.classList.toggle('bgdance');
+            }
         }
     </script>
     <h1>󱥢</h1>

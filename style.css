@@ -12,11 +12,39 @@ input, h1, h4, h6, p, button, a, img
 }
 
 body {
-    background-image: url("soweli.png");
-    background-repeat: repeat;
     color: white;
     font-family: ssk;
     font-size: 22px;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("soweli.png");
+    background-repeat: repeat;
+    animation: moveIt 60s linear infinite;
+    z-index: -2;
+}
+
+body.bgdance::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("dance2.gif");
+    background-repeat: repeat;
+    opacity: 0.3;
+    animation: moveIt 30s linear infinite;
+    z-index: -1;
+}
+
+@keyframes moveIt {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1000px -1000px;
+    }
 }
 
 hr {

@@ -19,7 +19,7 @@ body {
 
 body::before {
     content: "";
-    position: absolute;
+    position: fixed;
     inset: 0;
     background-image: url("soweli.png");
     background-repeat: repeat;
@@ -29,7 +29,7 @@ body::before {
 
 body.bgdance::after {
     content: "";
-    position: absolute;
+    position: fixed;
     inset: 0;
     background-image: url("dance2.gif");
     background-repeat: repeat;

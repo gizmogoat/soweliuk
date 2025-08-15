@@ -15,6 +15,7 @@ body {
     color: white;
     font-family: ssk;
     font-size: 22px;
+    background-color: black;
 }
 
 body::before {
